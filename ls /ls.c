@@ -187,7 +187,7 @@ int main(int argc, char *argv[])
 			return -1;
 		}
 
-		if (print_stats(current_file->d_name, (show_all || show_la), &sb, (show_list || show_la))) {
+		if (print_stats(current_file->d_name, (show_all || show_la), &sb, (show_list || show_la)) != 0) {
 			fprintf(stderr, "print_stats error!\n");
 			return -1;
 		}
